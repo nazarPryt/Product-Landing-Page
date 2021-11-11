@@ -4,49 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+/>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Product Landing Page</title>
 </head>
 <body>
-    <header class="header">
-        <a class="header__logo" href="#"><img src="img/page-logo.png" alt="logo"></a>
-        <nav class="header__nav">
-            <a class="header__nav__link" href="#">Features</a>
-            <a class="header__nav__link" href="#">How It Works</a>
-            <a class="header__nav__link" href="#">Pricing</a>
-        </nav>
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a class="header__logo" href="#"><img id="header-img" src="img/page-logo.png" alt="logo"></a>
+            <nav class="header__nav" id="nav-bar">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#video">How It Works</a>
+                <a class="nav-link" href="#price">Pricing</a>
+            </nav>
+        </div>
     </header>
 
     <main class="inner">
         <h1 class="title">Handcrafted, home-made masterpieces</h1>
-        <form class="form" action="">
-            <input class="input" type="email" name="person-email" id="" placeholder="Enter your email address">
-            <button class="btn" id="btn1">get started</button>
+        <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">
+            <input class="input" type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <input class="btn" type="submit" id="submit" value="get started"> 
         </form>
     
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="card__wrap">
-        <div class="card">
-            <h3 class="card__title">TENOR TROMBONE</h3>
-            <h3 class="card__price">$600</h3>
-            <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
-            <button class="card__button">select</button>
+
+        <div class="features" id="features">
+            <div class="features__string">
+                <div class="features__icon"><i class="fa fa-3x fa-fire"></i></div>
+                <div class="features__string__inner">
+                    <h3 class="features__title">Premium Materials</h3>
+                    <p class="features__discribe">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+
+            <div class="features__string">
+                <div class="features__icon"><i class="fa fa-3x fa-truck"></i></div>
+                <div class="features__string__inner">
+                    <h3 class="features__title">Fast Shipping</h3>
+                    <p class="features__discribe">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+
+            <div class="features__string">
+                <div class="features__icon"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
+                <div class="features__string__inner">
+                    <h3 class="features__title">Quality Assurance</h3>
+                    <p class="features__discribe">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <h3 class="card__title">BASS TROMBONE</h3>
-            <h3 class="card__price">$900</h3>
-            <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
-            <button class="card__button">select</button>
-        </div>
 
-        <div class="card">
-            <h3 class="card__title">VALVE TROMBONE</h3>
-            <h3 class="card__price">$600</h3>
-            <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
-            <button class="card__button">select</button>
+        <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <div class="card__wrap" id="price">
+            <div class="card">
+                <h3 class="card__title">TENOR TROMBONE</h3>
+                <h3 class="card__price">$600</h3>
+                <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
+                <button class="card__button">select</button>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">BASS TROMBONE</h3>
+                <h3 class="card__price">$900</h3>
+                <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
+                <button class="card__button">select</button>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">VALVE TROMBONE</h3>
+                <h3 class="card__price">$600</h3>
+                <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta, ut nostrum nisi eius asperiores eligendi voluptate laboriosam illum officiis.</p>
+                <button class="card__button">select</button>
+            </div>
         </div>
-    </div>
     </main>
     <footer class="footer">
         <div class="footer__nav">
